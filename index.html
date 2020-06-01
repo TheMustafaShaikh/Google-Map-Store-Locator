@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Maps STORE LOCATOR</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+    <script src="js/store-data.js"></script>
+</head>
+
+<body>
+
+    <div class="title-website">
+        <div class="line">WELCOME</div>
+        <div class="line">TO</div>
+        <div class="line">STORE LOCATOR</div>
+
+    </div>
+
+    <div class="search-container">
+        <div class="search-box">
+            <input type="text" placeholder="Postalcode" id="postal-code-input">
+            <i class="fas fa-search" onclick="searchPostalNumber()"></i>
+        </div>
+
+    </div>
+
+    <div class="list-of-address">
+        <!-- <div class="address">
+            <p class="address-street">
+                <span id="street">Street 250, main street</span><br /><span id="area">Gulshan-E-Iqbal, Block 11</span><br/><span class="phone-number">(+1)111-1111</span></p>
+            <span class="number"><span>1</span></span>
+            // this will be udated by javascript!
+            -->
+
+    </div>
+
+
+
+    <div id="map"></div>
+    <script src="js/index.js">
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBh15L6ZQVrZVsMjwAhb_3-X6bbgpSGtQk&callback=initMap" type="text/javascript"></script>
+
+</body>
+
+</html>
+
+</html>

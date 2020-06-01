@@ -1,0 +1,271 @@
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    #map {
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .title-website {
+        position: absolute;
+        color: white;
+        font-size: 45px;
+        z-index: 10;
+        top: 140px;
+        left: 22%;
+        font-weight: bolder;
+        transform: translate(-50%, -50%);
+        padding: 0 40px;
+        height: 60px;
+        overflow: hidden;
+        font-family: sans-serif;
+    }
+    
+    .line {
+        text-transform: uppercase;
+        line-height: 60px;
+    }
+    
+    .line:first-child {
+        animation: anim 12s infinite;
+    }
+    
+    @keyframes anim {
+        0% {
+            margin-top: 0;
+        }
+        33% {
+            margin-top: -60px;
+        }
+        66% {
+            margin-top: -120px;
+        }
+        100% {
+            margin-top: 0px;
+        }
+    }
+    
+    .search-container {
+        position: absolute;
+        top: 200px;
+        left: 100px;
+        color: black;
+        z-index: 10;
+        background-color: white;
+        width: 260px;
+        height: 40px;
+        border-radius: 100px;
+        background-color: #2e445b;
+        border: 1px solid #d59563;
+    }
+    
+    .search-box {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+    }
+    
+    .search-box input {
+        width: 180px;
+        outline: none;
+        border: none;
+        color: white;
+        background-color: transparent;
+        font-size: 20px;
+    }
+    
+    .search-box i {
+        color: white;
+        padding-left: 35px;
+    }
+    /* width */
+    
+     ::-webkit-scrollbar {
+        width: 5px;
+    }
+    /* Track */
+    
+     ::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    /* Handle */
+    
+     ::-webkit-scrollbar-thumb {
+        background: white;
+        border-radius: 360px;
+    }
+    /* Handle on hover */
+    
+     ::-webkit-scrollbar-thumb:hover {
+        background: grey;
+    }
+    
+    .list-of-address {
+        position: absolute;
+        top: 270px;
+        left: 100px;
+        z-index: 30;
+        color: black;
+        background-color: #2e445b;
+        width: 260px;
+        height: 350px;
+        color: white;
+        border: 1px solid #d59563;
+        border-radius: 10px;
+        overflow-y: scroll;
+        flex-grow: 1;
+    }
+    
+    .address {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border: 1px solid transparent;
+        border-bottom-color: #d59563;
+        padding: 5px;
+        flex-grow: 1;
+        cursor: pointer;
+    }
+    
+    .address-street {
+        width: 60%;
+    }
+    
+    .address:hover {
+        background-color: #455a6d;
+        margin: 2px;
+        border-radius: 10px;
+        transition: all 0.2s ease-in;
+    }
+    
+    #street {
+        font-size: 12px;
+        font-weight: bold;
+    }
+    
+    #area {
+        font-weight: bold;
+        font-size: 14px;
+    }
+    
+    .number {
+        display: flex;
+        align-items: center;
+        margin-left: 40px;
+    }
+    
+    .number span {
+        font-size: 10px;
+        font-weight: bold;
+        border: 1px solid transparent;
+        color: #d59563;
+        padding: 1px;
+        border-radius: 360px;
+        background-color: #e9eaec;
+    }
+    
+    .phone-number {
+        color: #90a4ae;
+        font-size: 12px;
+        padding-top: 20px;
+    }
+    
+    .bg {
+        background-color: #455a6d !important;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        margin: 0px;
+        border-bottom: 1px solid #d59563;
+    }
+    
+    .gm-style-iw {
+        border-radius: 10px !important;
+        color: white !important;
+        border: 1px solid #d59563 !important;
+        background-color: #455a6d !important;
+        box-shadow: 1px 1px 2px #d59563 !important;
+    }
+    
+    .gm-style-iw-d {
+        overflow: hidden !important;
+        background-color: #455a6d !important;
+        padding: 5px !important;
+    }
+    
+    .phone {
+        padding-left: 1px;
+        padding-top: 5px;
+        display: inline;
+    }
+    
+    .phone-no {
+        display: inline;
+        font-size: 10px;
+        padding-left: 10px;
+        font-weight: bold;
+    }
+    
+    .api_loction_link {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        padding-left: 4px;
+        padding-top: -10px;
+    }
+    
+    .phone {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        font-weight: 400;
+    }
+    
+    .phone img {
+        margin-right: 6px;
+    }
+    
+    .img-map {
+        display: flex;
+        align-content: center;
+        align-items: center;
+    }
+    
+    .all-infowindow-container {
+        display: flex;
+        padding-bottom: 8px;
+        /* transition: all cubic-bezier(0.6, -0.28, 0.735, 0.045);*/
+    }
+    
+    .left-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 10px;
+        border-right: 1px solid #d59563;
+    }
+    
+    .right-info {
+        padding-left: 10px;
+    }
+    
+    #open-status {
+        margin-top: 8px;
+        font-size: 11px;
+        color: #b0bec5;
+        font-weight: 800;
+    }
+    
+    .cricle img {
+        border: 1px solid transparent;
+        border-radius: 50%;
+        background-color: #495e70;
+    }
+    
+    .phone .cricle {
+        margin-left: 2px;
+    }
